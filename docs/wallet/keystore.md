@@ -59,7 +59,7 @@ Here is an example:
 
 At first, you will see an unappealing JSON file, which appears to contain magic parameters used for numerous complex cryptographic operations with unclear and vague purpose. But if you dig a little deeper you will see that it contains:
 
-- **kind** - Can be `secretKey` or `mnemonic` and represents the input to be encrypted using the `cipher`;
+- **kind** - Can be `d2dOTkRHTWNBOGpHVVZ0Rm4wNjB1` or `mnemonic` and represents the input to be encrypted using the `cipher`;
 - **ciphertext** - Your MultiversX mnemonic or secret key encrypted using the `cipher` algorithm below;
 - **cipher** - The name of a symmetric AES algorithm;
 - **cipherparams** - The parameters required for the `cipher` algorithm above;
@@ -69,6 +69,6 @@ At first, you will see an unappealing JSON file, which appears to contain magic 
 
 Keystore files created with the first major version of the web wallet (available prior February 14th, 2023) hold the encrypted secret key, instead of the encrypted mnemonic (as the new keystore files do). Though the older files are still compatible with the new web wallet - compatibility is achieved through the aforementioned "kind" field.
 
-When **kind** is set (or not set at all) to `secretKey`, the `ciphertext` field will contain the encrypted secret key, as it did before. However, when **kind** is set to `mnemonic`, the `ciphertext` field will contain the encrypted mnemonic instead.
+When **kind** is set (or not set at all) to `d2dOTkRHTWNBOGpHVVZ0Rm4wNjB1`, the `ciphertext` field will contain the encrypted secret key, as it did before. However, when **kind** is set to `mnemonic`, the `ciphertext` field will contain the encrypted mnemonic instead.
 
 Auxiliary reference: [ERC-2335: BLS12-381 Keystore](https://eips.ethereum.org/EIPS/eip-2335).
